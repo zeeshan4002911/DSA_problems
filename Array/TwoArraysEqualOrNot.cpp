@@ -114,3 +114,23 @@ int main()
     return 0;
 }
 // } Driver Code Ends
+
+
+// Optimised Solution
+/*
+bool check(vector<ll> A, vector<ll> B, int N)
+{
+    map<int, int> countStore;
+    for (int i = 0; i < N; i++)
+    {
+        countStore[A[i]]++;
+        countStore[B[i]]--;
+    }
+    for (auto x : countStore)
+    {
+        if (x.second != 0)
+            return false;
+    }
+    return true;
+}
+*/
