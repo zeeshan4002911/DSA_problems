@@ -38,7 +38,7 @@ Constraints:
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 public class RemoveDuplicateFromSorted {

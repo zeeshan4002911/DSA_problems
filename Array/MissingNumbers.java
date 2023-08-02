@@ -52,8 +52,8 @@ Size of the array A[] = N-1
  //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
-import java.lang.*;
+// import java.util.*;
+// import java.lang.*;
 import java.io.*;
 
 class MissingNumbers {
@@ -88,7 +88,7 @@ class MissingNumbers {
 
 class Compute {
     
-    public static int missingNumber(int A[], int N)
+    public int missingNumber(int A[], int N)
     {
          // Your code goes here
         int sum = 0;

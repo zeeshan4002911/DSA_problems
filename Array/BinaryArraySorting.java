@@ -45,9 +45,9 @@ Constraints:
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
+// import java.util.*;
 import java.io.*;
-import java.lang.*;
+// import java.lang.*;
 
 class BinaryArraySorting {
     public static void main(String args[]) throws IOException {
@@ -93,7 +93,7 @@ class BinaryArraySorting {
 
 class Solution {
     // Function to sort the binary array.
-    static void binSort(int A[], int N) {
+    public void binSort(int A[], int N) {
         // add your code here
         int zeros = 0;
 
