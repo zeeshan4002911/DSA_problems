@@ -93,7 +93,7 @@ class Pair {
  */
 
 class Compute {
-    static Pair getMinMax(long a[], long n)  
+    Pair getMinMax(long a[], long n)  
     {
         //Write your code here
         long max = a[0]; 
