@@ -54,7 +54,6 @@ Constraints:
 
 // import java.util.*;
 import java.io.*;
-import java.util.Arrays;
 
 public class AlternativePositivaAndNegative {
 
