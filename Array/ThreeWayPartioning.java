@@ -140,22 +140,26 @@ class Solution {
     // that array is divided into three parts.
     public void threeWayPartition(int array[], int a, int b) {
         // code here
-        int[] array_cpy = array.clone();
-        int j = 0;
-
-        for (int i = 0; i < array.length; i++) {
-            if (array_cpy[i] < a)
-                array[j++] = array_cpy[i];
-        }
-
-        for (int i = 0; i < array.length; i++) {
-            if (array_cpy[i] >= a && array_cpy[i] <= b)
-                array[j++] = array_cpy[i];
-        }
-
-        for (int i = 0; i < array.length; i++) {
-            if (array_cpy[i] > b)
-                array[j++] = array_cpy[i];
+        int low = 0, mid = 0, high = array.length - 1;
+        while (mid <= high) {
+            if (array[mid] < a) {
+                int temp = array[low];
+                array[low] = array[mid];
+                array[mid] = temp;
+                
+                low++;
+                mid++;
+            }
+            else if (array[mid] > b) {
+                int temp = array[high];
+                array[high] = array[mid];
+                array[mid] = temp;
+                
+                high--;
+            }
+            else {
+                mid++;
+            }
         }
     }
 }
