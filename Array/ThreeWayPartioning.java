@@ -162,4 +162,26 @@ class Solution {
             }
         }
     }
+
+    // public void threeWayPartition(int array[], int a, int b)
+    // {
+    //     // code here 
+    //     int[] array_cpy = array.clone();
+    //     int j = 0;
+
+    //     for (int i = 0; i < array.length; i++) {
+    //         if (array_cpy[i] < a)
+    //             array[j++] = array_cpy[i];
+    //     }
+
+    //     for (int i = 0; i < array.length; i++) {
+    //         if (array_cpy[i] >= a && array_cpy[i] <= b)
+    //             array[j++] = array_cpy[i];
+    //     }
+
+    //     for (int i = 0; i < array.length; i++) {
+    //         if (array_cpy[i] > b)
+    //             array[j++] = array_cpy[i];
+    //     }
+    // }
 }
