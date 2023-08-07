@@ -40,7 +40,7 @@ Constraints:
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
+// import java.util.*;
 import java.io.*;
 
 public class RowWithMax1s {
@@ -74,16 +74,28 @@ public class RowWithMax1s {
 class Solution {
     int rowWithMax1s(int arr[][], int n, int m) {
         // O(n^2) solution
-        int max = 0;
-        int result = -1;
-        for (int i = 0; i < n; i++) {
-            int sum = 0;
-            for (int j = 0; j < m; j++) {
-                sum += arr[i][j];
-            }
-            if (sum > max) {
-                max = sum;
+        // int max = 0;
+        // int result = -1;
+        // for (int i = 0; i < n; i++) {
+        // int sum = 0;
+        // for (int j = 0; j < m; j++) {
+        // sum += arr[i][j];
+        // }
+        // if (sum > max) {
+        // max = sum;
+        // result = i;
+        // }
+        // }
+        // return result;
+
+        // O(n + m) solution as the row are sorted in ascending order
+        int i = 0, j = m - 1, result = -1;
+        while (i < n && j >= 0) {
+            if (arr[i][j] == 1) {
+                j--;
                 result = i;
+            } else {
+                i++;
             }
         }
         return result;
