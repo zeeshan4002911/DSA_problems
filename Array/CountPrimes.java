@@ -33,19 +33,35 @@ class countPrimes {
     }
 
     public static int countPrimesNum(int n) {
-        int count = 0;
+        // Sieve of Eratosthenes method
+        boolean[] seen = new boolean[n];
+        int result = 0;
+
         for (int i = 2; i < n; i++) {
-            boolean breakFlag = false;
-            inner: for (int j = 2; j <= Math.sqrt(i); j++) {
-                if (i % j == 0) {
-                    breakFlag = true;
-                    break inner;
+            if (!seen[i]) {
+                result++;
+                for (int j = i * i; j < n; j += i) {
+                    seen[j] = true;
                 }
             }
-            if (!breakFlag) {
-                count++;
-            }
         }
-        return count;
+
+        return result;
+
+        // Giving TLE
+        // int count = 0;
+        // for (int i = 2; i < n; i++) {
+        // boolean breakFlag = false;
+        // inner: for (int j = 2; j <= Math.sqrt(i); j++) {
+        // if (i % j == 0) {
+        // breakFlag = true;
+        // break inner;
+        // }
+        // }
+        // if (!breakFlag) {
+        // count++;
+        // }
+        // }
+        // return count;
     }
 }
