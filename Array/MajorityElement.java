@@ -70,21 +70,45 @@ class Geeks {
 
 class Solution {
     int majorityElement(int a[], int size) {
-        // your code here
-        int max_count = 0;
-        int idx = -1;
-        for (int i = 0; i < size; i++) {
-            int count = 0;
-            for (int j = 0; j < size; j++) {
-                if (a[i] == a[j]) {
-                    count++;
-                }
-            }
-            if (count > max_count) {
-                max_count = count;
-                idx = i;
+        int count = 1;
+        int ansIndex = 0;
+        for (int i = 1; i < size; i++) {
+            if (a[i] == a[ansIndex]) {
+                count++;
+            } else
+                count--;
+            if (count <= 0) {
+                count = 1;
+                ansIndex = i;
             }
         }
-        return (max_count > (size / 2)) ? a[idx] : -1;
+
+        int freq = 0;
+        for (int i = 0; i < size; i++) {
+            if (a[i] == a[ansIndex]) {
+                freq++;
+            }
+        }
+        if (freq > size / 2)
+            return a[ansIndex];
+
+        return -1;
+
+        // O(n^2) Solution -- TLE
+        // int max_count = 0;
+        // int idx = -1;
+        // for (int i = 0; i < size; i++) {
+        // int count = 0;
+        // for (int j = 0; j < size; j++) {
+        // if (a[i] == a[j]) {
+        // count++;
+        // }
+        // }
+        // if (count > max_count) {
+        // max_count = count;
+        // idx = i;
+        // }
+        // }
+        // return (max_count > (size / 2)) ? a[idx] : -1;
     }
 }
