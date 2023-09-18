@@ -63,5 +63,10 @@ class Reverse {
         }
         str = String.join("", arr);
         return str;
+        // char[] charArr = str.toCharArray();
+        // String result = "";
+        // for (int i = charArr.length - 1; i >= 0; i--)
+        //     result += charArr[i];
+        // return result;
     }
 }
