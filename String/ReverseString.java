@@ -1,4 +1,3 @@
-package String;
 /**
  * 
 Reverse a String

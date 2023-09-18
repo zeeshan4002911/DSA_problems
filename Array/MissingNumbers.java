@@ -73,7 +73,8 @@ class MissingNumbers {
             }
             
             Compute obj = new Compute();
-            System.out.println(obj.missingNumber(a, n));
+            int result = obj.missingNumber(a, n);
+            System.out.println(result);
             
         }
 	}
