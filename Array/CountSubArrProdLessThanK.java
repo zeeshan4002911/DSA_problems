@@ -86,7 +86,7 @@ class Solution {
                     product /= a[i];
                     i--;
                 }
-                count += (i - j);
+                count += (i - j + 1);
             }
         }
         // count -= (n - j);
