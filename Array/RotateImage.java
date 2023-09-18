@@ -47,7 +47,7 @@ class RotateImage {
                     k++;
                 }
             }
-            new Solution().rotate(matrix);
+            new Solution19().rotate(matrix);
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < r; i++) {
                 for (int j = 0; j < c; j++) {
@@ -60,7 +60,7 @@ class RotateImage {
     }
 }
 
-class Solution {
+class Solution19 {
     public void rotate(int[][] matrix) {
 
         /*

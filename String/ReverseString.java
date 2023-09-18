@@ -32,7 +32,6 @@ Constraints:
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
 import java.io.*;
 
 class ReverseString {
@@ -53,7 +52,7 @@ class ReverseString {
 class Reverse {
     // Complete the function
     // str: input string
-    public static String reverseWord(String str) {
+    public String reverseWord(String str) {
         // Reverse the string str
         String[] arr = str.split("");
         for (int i = 0, j = arr.length - 1; i < j; i++, j--) {

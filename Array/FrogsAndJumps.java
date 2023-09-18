@@ -60,7 +60,7 @@ class FrogsAndJumps {
                 frogs[i] = Integer.parseInt(inputLine2[i]);
             }
 
-            Solution ob = new Solution();
+            Solution8 ob = new Solution8();
             System.out.println(ob.unvisitedLeaves(N, leaves, frogs));
 
         }
@@ -71,7 +71,7 @@ class FrogsAndJumps {
 
 // User function Template for Java
 
-class Solution {
+class Solution8 {
     public int unvisitedLeaves(int N, int leaves, int frogs[]) {
         // Code here
         boolean[] visitedLeave = new boolean[leaves + 1];

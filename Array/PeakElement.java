@@ -66,7 +66,7 @@ class PeakElement {
             }
 
             int f = 0;
-            int A = (new Solution()).peakElement(tmp, n);
+            int A = (new Solution14()).peakElement(tmp, n);
 
             if (A < 0 && A >= n)
                 out.println(0);
@@ -91,7 +91,7 @@ class PeakElement {
 
 /* Complete the function below */
 
-class Solution {
+class Solution14 {
     // Function to find the peak element
     // arr[]: input array
     // n: size of array a[]

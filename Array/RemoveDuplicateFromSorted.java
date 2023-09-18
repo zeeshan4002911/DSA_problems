@@ -51,7 +51,7 @@ public class RemoveDuplicateFromSorted {
             for (int i = 0; i < N; i++)
                 a[i] = sc.nextInt();
 
-            Solution g = new Solution();
+            Solution18 g = new Solution18();
             int n = g.remove_duplicate(a, N);
 
             for (int i = 0; i < n; i++)
@@ -66,7 +66,7 @@ public class RemoveDuplicateFromSorted {
 
 // User function Template for Java
 
-class Solution {
+class Solution18 {
     int remove_duplicate(int A[], int N) {
         // code here
         int j = 0;

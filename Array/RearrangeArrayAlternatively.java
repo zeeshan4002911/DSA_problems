@@ -64,7 +64,7 @@ class RearrangeArrayAlternatively {
 
             // StringBuffer sb = new StringBuffer();
 
-            Solution ob = new Solution();
+            Solution16 ob = new Solution16();
 
             // calling rearrange() function
             ob.rearrange(arr, n);
@@ -80,7 +80,7 @@ class RearrangeArrayAlternatively {
 
 // } Driver Code Ends
 
-class Solution {
+class Solution16 {
 
     // temp: input array
     // n: size of array

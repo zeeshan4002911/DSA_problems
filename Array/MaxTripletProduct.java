@@ -72,7 +72,7 @@ class MaxTripletProduct {
                 arr[i] = Long.parseLong(elements[i]);
             }
 
-            Solution obj = new Solution();
+            Solution11 obj = new Solution11();
             Long res = obj.maxTripletProduct(arr, sizeOfArray);
             System.out.println(res);
         }
@@ -83,7 +83,7 @@ class MaxTripletProduct {
 
 // User function Template for Java
 
-class Solution {
+class Solution11 {
     Long maxTripletProduct(Long arr[], int n) {
         // Complete the function
         long max1 = (long) Double.NEGATIVE_INFINITY;

@@ -77,7 +77,7 @@ class UnionOfTwoSorted {
             for (int i = 0; i < M; i++)
                 arr2[i] = Integer.parseInt(st[i]);
 
-            Solution obj = new Solution();
+            Solution25 obj = new Solution25();
             ArrayList<Integer> res = new ArrayList<Integer>();
             res = obj.findUnion(arr1, arr2, N, M);
             for (int i = 0; i < res.size(); i++)
@@ -93,7 +93,7 @@ class UnionOfTwoSorted {
 
 // arr1,arr2 : the arrays
 // n, m: size of arrays
-class Solution {
+class Solution25 {
     private static int cacheVal = 0;
 
     // Function to return a list containing the union of the two arrays.

@@ -65,7 +65,7 @@ class EquilibriumPoint {
                 arr[i] = Long.parseLong(inputLine[i]);
             }
 
-            Solution ob = new Solution();
+            Solution6 ob = new Solution6();
             
             //calling equilibriumPoint() function
             System.out.println(ob.equilibriumPoint(arr, n));
@@ -75,7 +75,7 @@ class EquilibriumPoint {
 // } Driver Code Ends
 
 
-class Solution {
+class Solution6 {
 
     
     // a: input array

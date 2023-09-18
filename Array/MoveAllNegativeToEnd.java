@@ -64,7 +64,7 @@ class MoveAllNegativeToEnd {
                 a[i] = Integer.parseInt(inputLine[i]);
             }
             
-            Solution obj = new Solution();
+            Solution13 obj = new Solution13();
             obj.segregateElements(a, n);
             
             for(int i=0;i<n;i++)
@@ -80,7 +80,7 @@ class MoveAllNegativeToEnd {
 
 //User function Template for Java
 
-class Solution {
+class Solution13 {
     
     public void segregateElements(int arr[], int n)
     {

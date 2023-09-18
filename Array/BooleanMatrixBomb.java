@@ -54,7 +54,6 @@ Constraints:
 //Initial Template for Java
 
 import java.io.*;
-import java.util.*;
 
 class BooleanMatrixBomb {
     public static void main(String args[]) throws IOException {
@@ -75,7 +74,7 @@ class BooleanMatrixBomb {
                     k++;
                 }
             }
-            new Solution().booleanMatrix(matrix);
+            new Solution2().booleanMatrix(matrix);
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < r; i++) {
                 for (int j = 0; j < c; j++) {
@@ -92,7 +91,7 @@ class BooleanMatrixBomb {
 
 // User function Template for Java
 
-class Solution {
+class Solution2 {
     // Function to modify the matrix such that if a matrix cell matrix[i][j]
     // is 1 then all the cells in its ith row and jth column will become 1.
     void booleanMatrix(int matrix[][]) {

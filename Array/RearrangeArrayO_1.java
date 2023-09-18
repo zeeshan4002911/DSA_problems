@@ -44,9 +44,7 @@ Constraints:
 //{ Driver Code Starts
 //Initial Template for Java
 
-import java.util.*;
 import java.io.*;
-import java.lang.*;
 
 class RearrangeArrayO_1 {
     public static void main(String args[]) throws IOException {
@@ -65,7 +63,7 @@ class RearrangeArrayO_1 {
                 arr[(int) i] = Integer.parseInt(st[(int) i]);
 
             // calling arrange() function
-            new Solution().arrange(arr, n);
+            new Solution17().arrange(arr, n);
 
             // printing the elements
             for (int i = 0; i < n; i++)
@@ -78,7 +76,7 @@ class RearrangeArrayO_1 {
 
 // User function Template for Java
 
-class Solution {
+class Solution17 {
 
     // arr: input array
     // n: size of array

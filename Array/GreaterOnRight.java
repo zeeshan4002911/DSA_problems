@@ -59,7 +59,7 @@ public class GreaterOnRight {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            new Solution().nextGreatest(arr, n);
+            new Solution9().nextGreatest(arr, n);
             for (int i = 0; i < n; i++) {
                 System.out.print(arr[i] + " ");
             }
@@ -71,7 +71,7 @@ public class GreaterOnRight {
 
 // User function Template for Java
 
-class Solution {
+class Solution9 {
     void nextGreatest(int arr[], int n) {
         int greatestNum = -1;
         for (int i = arr.length - 1; i >= 0; i--) {

@@ -59,7 +59,7 @@ class Sort0s1s2s {
             for (int i = 0; i < n; i++) {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
-            Solution ob = new Solution();
+            Solution22 ob = new Solution22();
             ob.sort012(arr, n);
             StringBuffer str = new StringBuffer();
             for (int i = 0; i < n; i++) {
@@ -75,7 +75,7 @@ class Sort0s1s2s {
 // } Driver Code Ends
 // User function template for Java
 
-class Solution {
+class Solution22 {
     public void sort012(int a[], int n) {
         int zeros = 0;
         int ones = 0;

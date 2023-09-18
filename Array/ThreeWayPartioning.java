@@ -94,7 +94,7 @@ class ThreeWayPartioning {
                 else if (original[i] < b)
                     k1++;
             }
-            Solution ob = new Solution();
+            Solution24 ob = new Solution24();
             ob.threeWayPartition(array, a, b);
 
             for (int i = 0; i < k1; i++) {
@@ -135,7 +135,7 @@ class ThreeWayPartioning {
 
 // User function Template for Java
 
-class Solution {
+class Solution24 {
     // Function to partition the array around the range such
     // that array is divided into three parts.
     public void threeWayPartition(int array[], int a, int b) {

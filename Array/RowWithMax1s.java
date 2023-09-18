@@ -61,7 +61,7 @@ public class RowWithMax1s {
                     arr[i][j] = Integer.parseInt(inputLine[i * m + j]);
                 }
             }
-            int ans = new Solution().rowWithMax1s(arr, n, m);
+            int ans = new Solution20().rowWithMax1s(arr, n, m);
             System.out.println(ans);
         }
     }
@@ -71,7 +71,7 @@ public class RowWithMax1s {
 
 // User function Template for Java
 
-class Solution {
+class Solution20 {
     int rowWithMax1s(int arr[][], int n, int m) {
         // O(n^2) solution
         // int max = 0;

@@ -75,7 +75,7 @@ class CountTripletLessThanX {
             // for (int i = 0; i < m; i++) {
             // b[i] = Long.parseLong(a2[i]);
             // }
-            Solution ob = new Solution();
+            Solution4 ob = new Solution4();
             long ans = ob.countTriplets(a, n, k);
             System.out.println(ans);
         }
@@ -85,7 +85,7 @@ class CountTripletLessThanX {
 // } Driver Code Ends
 // User function Template for Java
 
-class Solution {
+class Solution4 {
     long countTriplets(long arr[], int n, int sum) {
         Arrays.sort(arr);
         int count = 0;

@@ -84,7 +84,7 @@ class FindTheFine {
                 b[i] = Long.parseLong(inputLine1[i]);
             }
             
-            Solution obj = new Solution();
+            Solution7 obj = new Solution7();
             System.out.println(obj.totalFine(n, k, a, b));
             
         }
@@ -98,7 +98,7 @@ class FindTheFine {
 //User function Template for Java
 
 
-class Solution {
+class Solution7 {
     
     public long totalFine( long n, long date, long car[], long fine[])
     {

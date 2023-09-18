@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Given an integer target, return true if target is in matrix or false
  * otherwise.
  * 
- * You must write a solution in O(log(m * n)) time complexity.
+ * You must write a solution21 in O(log(m * n)) time complexity.
  * 
  * 
  * 
@@ -55,13 +55,13 @@ public class SearchIn2DMatrix {
             }
         }
         int target = scanner.nextInt();
-        boolean result = Solution.searchMatrix(matrix, target);
+        boolean result = Solution21.searchMatrix(matrix, target);
         System.out.println(result);
         scanner.close();
     }
 }
 
-class Solution {
+class Solution21 {
     public static boolean searchMatrix(int[][] matrix, int target) {
         for (int i = 0; i < matrix.length; i++) {
             if (target >= matrix[i][0] && target <= matrix[i][matrix[i].length - 1]) {

@@ -40,7 +40,6 @@ Constraints:
 //Initial Template for Java
 
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
 class CountSubArrProdLessThanK {
@@ -60,7 +59,7 @@ class CountSubArrProdLessThanK {
                 a[i] = Long.parseLong(inputLine[i]);
             }
 
-            Solution obj = new Solution();
+            Solution3 obj = new Solution3();
             out.println(obj.countSubArrayProductLessThanK(a, n, k));
         }
         out.close();
@@ -71,7 +70,7 @@ class CountSubArrProdLessThanK {
 
 // User function Template for Java
 
-class Solution {
+class Solution3 {
 
     public long countSubArrayProductLessThanK(long a[], int n, long k) {
         int j = 0;

@@ -63,7 +63,7 @@ class MSubArrayWithGivenSum {
             s = br.readLine().trim().split(" ");
             for (int i = 0; i < n; i++)
                 a[i] = Integer.parseInt(s[i]);
-            Solution obj = new Solution();
+            Solution23 obj = new Solution23();
             ArrayList<Integer> res = obj.subarraySum(a, n, k);
             for (int ii = 0; ii < res.size(); ii++)
                 ot.print(res.get(ii) + " ");
@@ -75,7 +75,7 @@ class MSubArrayWithGivenSum {
 }
 // } Driver Code Ends
 
-class Solution {
+class Solution23 {
     // Function to find a continuous sub-array which adds up to a given number.
     public ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
         // Your code here

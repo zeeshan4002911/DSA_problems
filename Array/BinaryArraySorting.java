@@ -77,7 +77,7 @@ class BinaryArraySorting {
 
             // calling the method binSort() of
             // class BinarySort()
-            new Solution().binSort(A, N);
+            new Solution1().binSort(A, N);
 
             // printing the elements of array
             for (Integer x : A)
@@ -91,7 +91,7 @@ class BinaryArraySorting {
 
 // User function Template for Java
 
-class Solution {
+class Solution1 {
     // Function to sort the binary array.
     public void binSort(int A[], int N) {
         // add your code here

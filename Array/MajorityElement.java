@@ -45,8 +45,6 @@ Constraints:
 //Initial Template for Java
 
 import java.util.*;
-import java.io.*;
-import java.lang.*;
 
 class Geeks {
     public static void main(String args[]) {
@@ -60,7 +58,8 @@ class Geeks {
             for (int i = 0; i < n; i++)
                 arr[i] = sc.nextInt();
 
-            System.out.println(new Solution().majorityElement(arr, n));
+            System.out.println(new Solution10().majorityElement(arr, n));
+            sc.close();
         }
     }
 }
@@ -68,7 +67,7 @@ class Geeks {
 
 // User function Template for Java
 
-class Solution {
+class Solution10 {
     int majorityElement(int a[], int size) {
         int count = 1;
         int ansIndex = 0;
@@ -94,7 +93,7 @@ class Solution {
 
         return -1;
 
-        // O(n^2) Solution -- TLE
+        // O(n^2) Solution10 -- TLE
         // int max_count = 0;
         // int idx = -1;
         // for (int i = 0; i < size; i++) {

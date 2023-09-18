@@ -63,7 +63,7 @@ class GFG {
                 a[i] = Integer.parseInt(inputLine[i]);
             }
 
-            Solution obj = new Solution();
+            Solution12 obj = new Solution12();
             System.out.println(obj.numofsubset(a, n));
 
         }
@@ -74,7 +74,7 @@ class GFG {
 
 // User function Template for Java
 
-class Solution {
+class Solution12 {
 
     public int numofsubset(int arr[], int n) {
 
