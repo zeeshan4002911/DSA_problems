@@ -49,7 +49,7 @@ class FindTrasisitionPoint {
             for (int i = 0; i < n; i++) {
                 arr[i] = sc.nextInt();
             }
-            GfG obj = new GfG();
+            GfG2 obj = new GfG2();
             System.out.println(obj.transitionPoint(arr, n));
             T--;
         }
@@ -58,7 +58,7 @@ class FindTrasisitionPoint {
 }
 // } Driver Code Ends
 
-class GfG {
+class GfG2 {
     int transitionPoint(int arr[], int n) {
         if (arr[0] == 1)
             return 0;

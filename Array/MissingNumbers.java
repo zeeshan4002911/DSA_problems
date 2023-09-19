@@ -72,7 +72,7 @@ class MissingNumbers {
                 a[i] = Integer.parseInt(inputLine[i]);
             }
             
-            Compute obj = new Compute();
+            Compute2 obj = new Compute2();
             int result = obj.missingNumber(a, n);
             System.out.println(result);
             
@@ -87,7 +87,7 @@ class MissingNumbers {
 //User function Template for Java
 
 
-class Compute {
+class Compute2 {
     
     public int missingNumber(int A[], int N)
     {

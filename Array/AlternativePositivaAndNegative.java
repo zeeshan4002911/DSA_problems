@@ -69,7 +69,7 @@ public class AlternativePositivaAndNegative {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            new Solution().rearrange(arr, n);
+            new Solution2().rearrange(arr, n);
             for (int i = 0; i < n; i++) {
                 System.out.print(arr[i] + " ");
             }
@@ -82,7 +82,7 @@ public class AlternativePositivaAndNegative {
 
 // User function Template for Java
 
-class Solution {
+class Solution2 {
     void rearrange(int arr[], int n) {
         // code here
         int[] positives = new int[n];
