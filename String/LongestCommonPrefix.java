@@ -61,19 +61,17 @@ class GFG {
 class Solution {
     String longestCommonPrefix(String arr[], int n) {
         // code here
-        StringBuilder str = new StringBuilder();
-        int j = 0;
-        for (int i = 1; i < n; i++) {
-            if (arr[i].length() == j) {
-                break;
-            }
-            if (arr[i].charAt(j) != arr[i - 1].charAt(j)) {
-                break;
+        Arrays.sort(arr);
+        StringBuilder ans = new StringBuilder();
+        String x = arr[0];
+        String y = arr[n - 1];
+        for (int i = 0; i < x.length(); i++) {
+            if (x.charAt(i) == y.charAt(i)) {
+                ans.append(x.charAt(i));
             } else {
-                str.append(arr[i].charAt(j));
-                j++;
+                break;
             }
         }
-        return str.toString();
+        return ans.toString().isEmpty() ? "-1" : ans.toString();
     }
 }
