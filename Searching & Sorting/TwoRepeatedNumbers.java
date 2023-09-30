@@ -77,21 +77,17 @@ class GFG {
 class Solution {
     // Function to find two repeated elements.
     public int[] twoRepeated(int arr[], int N) {
-        // Your code here
-        int[] countArr = new int[N + 2];
-        int first = 0, second = 0;
-        for (int i = 0; i < arr.length; i++) {
-            countArr[arr[i]]++;
-            if (countArr[arr[i]] == 2) {
-                if (first == 0)
-                    first = arr[i];
-                else if (second == 0) {
-                    second = arr[i];
-                    break;
-                }
+        int[] res = new int[2];
+        for (int i = 0; i < N + 2; i++) {
+            if (arr[Math.abs(arr[i])] > 0)
+                arr[Math.abs(arr[i])] *= -1;
+            else {
+                if (res[0] == 0)
+                    res[0] = (Math.abs(arr[i]));
+                else
+                    res[1] = (Math.abs(arr[i]));
             }
         }
-        return new int[] { first, second };
+        return res;
     }
-
 }
