@@ -78,12 +78,20 @@ class Solution {
     // Function to find two repeated elements.
     public int[] twoRepeated(int arr[], int N) {
         // Your code here
-        int sum = 0;
+        int[] countArr = new int[N + 2];
+        int first = 0, second = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum += arr[i]; 
+            countArr[arr[i]]++;
+            if (countArr[arr[i]] == 2) {
+                if (first == 0)
+                    first = arr[i];
+                else if (second == 0) {
+                    second = arr[i];
+                    break;
+                }
+            }
         }
-        int n_sum = N * (N + 1) / 2;
-        
+        return new int[] { first, second };
     }
 
 }
