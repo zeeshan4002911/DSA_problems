@@ -55,6 +55,7 @@ class GfG {
 // User function Template for Java
 
 class Sol {
+    /*
     public static long numberCount(long N, long K) {
         // your code here
         int count = 0;
@@ -69,5 +70,32 @@ class Sol {
                 count++;
         }
         return count;
+    }
+    */
+
+    // Binary search
+    public static long numberCount(long N, long K) {
+        // your code here
+        long start = 1;
+        long end = N;
+        while (start <= end) {
+            long mid = (start + end) / 2;
+            if (mid - digitSum(mid) < K) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return (N - end);
+    }
+
+    static long digitSum(long n) {
+        long sum = 0;
+        while (n > 0) {
+            long ld = n % 10;
+            sum += ld;
+            n = n / 10;
+        }
+        return sum;
     }
 }
