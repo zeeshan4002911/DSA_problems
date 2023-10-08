@@ -116,11 +116,10 @@ class Solution {
     Node deleteNode(Node head, int x) {
         // Your code here
         int count = 0;
-
         if (head == null) {
             return head;
         }
-        Node curr = head, past = head;
+        Node curr = head;
         while (curr != null) {
             count++;
             if (count == x) {
@@ -128,13 +127,12 @@ class Solution {
                     head = head.next;
                     head.prev = null;
                 } else if (curr.next == null) {
-                    past.next = null;
+                    curr.prev.next = null;
                 } else {
-                    past.next = curr.next;
-                    curr.next.prev = past;
+                    curr.prev.next = curr.next;
+                    curr.next.prev = curr.prev;
                 }
             }
-            past = curr;
             curr = curr.next;
         }
         return head;
