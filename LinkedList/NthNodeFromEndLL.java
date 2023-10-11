@@ -128,20 +128,19 @@ class Solution {
         if (head == null) {
             return -1;
         }
-        int len = 0;
         Node curr = head;
+        Node slow = head;
         while (curr != null) {
-            len++;
-            curr = curr.next;
+            if (n != 0) {
+                curr = curr.next;
+                n--;
+            } else {
+                curr = curr.next;
+                slow = slow.next;
+            }
         }
-
-        int k = len - n;
-        if (k < 0)
+        if (n != 0)
             return -1;
-        curr = head;
-        for (int i = 0; i < k; i++) {
-            curr = curr.next;
-        }
-        return curr.data;
+        return slow.data;
     }
 }
