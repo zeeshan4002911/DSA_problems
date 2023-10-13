@@ -43,24 +43,24 @@ import java.io.*;
 
 class Remove_Duplicate_From_LL {
     Node head;
-    Node temp;
+    Node curr;
 
     public void addToTheLast(Node node) {
 
         if (head == null) {
             head = node;
-            temp = node;
+            curr = node;
         } else {
-            temp.next = node;
-            temp = node;
+            curr.next = node;
+            curr = node;
         }
     }
 
     void printList(PrintWriter out) {
-        Node temp = head;
-        while (temp != null) {
-            out.print(temp.data + " ");
-            temp = temp.next;
+        Node curr = head;
+        while (curr != null) {
+            out.print(curr.data + " ");
+            curr = curr.next;
         }
         out.println();
     }
@@ -97,6 +97,7 @@ class Remove_Duplicate_From_LL {
         out.close();
     }
 }
+
 class Node {
     int data;
     Node next;
@@ -126,20 +127,23 @@ class Solution {
     // Function to remove duplicates from unsorted linked list.
     public Node removeDuplicates(Node head) {
         // Your code here
-        Set<Integer> set = new HashSet<Integer>();
-
         if (head == null)
             return null;
 
-        Node curr = head;
+        HashSet<Integer> set = new HashSet<>();
 
-        while (curr != null && curr.next != null) {
-            set.add(curr.data);
-            while (curr.next != null && set.contains(curr.next.data)) {
+        Node curr = head;
+        set.add(curr.data);
+
+        while (curr.next != null) {
+            if (!set.contains(curr.next.data)) {
+                set.add(curr.next.data);
+                curr = curr.next;
+            } else {
                 curr.next = curr.next.next;
             }
-            curr = curr.next;
         }
+
         return head;
     }
 }
