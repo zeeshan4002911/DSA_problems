@@ -141,7 +141,8 @@ class Solution {
 
         if (data > curr.data) {
             Node newNode = new Node(data);
-            past.next = newNode;
+            curr.next = newNode;
+            newNode.next = head;
         }
 
         return head;
