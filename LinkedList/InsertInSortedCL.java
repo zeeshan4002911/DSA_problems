@@ -133,6 +133,7 @@ class Solution {
                 Node newNode = new Node(data);
                 past.next = newNode;
                 newNode.next = curr;
+                break;
             }
 
             past = curr;
