@@ -116,17 +116,17 @@ class Sol {
         while (curr2 != null) {
             sorted_set.add(curr2.data);
             curr2 = curr2.next;
-
         }
-        Node head = new Node(0);
-        Node curr = head;
-        Object[] arr = sorted_set.toArray();
-        for (int i = 0; i < arr.length; i++) {
-            Node newNode = new Node((int) arr[i]);
-            curr.next = newNode;
-            curr = curr.next;
+        Node head = null, curr = null;
+        for (Integer data : sorted_set) {
+            Node temp = new Node(data);
+            if (head == null) {
+                curr = head = temp;
+            } else {
+                curr.next = temp;
+                curr = temp;
+            }
         }
-        head = head.next;
         return head;
     }
 }
