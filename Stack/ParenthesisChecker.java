@@ -49,8 +49,6 @@ Constraints:
 
 //{ Driver Code Starts
 import java.util.*;
-import java.io.*;
-import java.lang.*;
 
 class Driverclass {
     public static void main(String args[]) {
@@ -70,15 +68,15 @@ class Driverclass {
                 System.out.println("balanced");
             else
                 System.out.println("not balanced");
-
         }
+        sc.close();
     }
 }
 // } Driver Code Ends
 
 class Solution {
     // Function to check if brackets are balanced or not.
-    static boolean ispar(String x) {
+    boolean ispar(String x) {
         // add your code here
         Stack<Character> stack = new Stack<>();
 
