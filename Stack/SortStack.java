@@ -48,6 +48,7 @@ class SortedStack {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
 // } Driver Code Ends
@@ -56,7 +57,26 @@ class SortedStack {
 class GfG {
     public Stack<Integer> sort(Stack<Integer> s) {
         // add code here.
-        
+        solve(s);
         return s;
+    }
+
+    private void solve(Stack<Integer> s) {
+        if (s.empty()) {
+            return;
+        }
+        int top = s.pop();
+        solve(s);
+        insertSorted(top, s);
+    }
+
+    private void insertSorted(int x, Stack<Integer> s) {
+        if (s.isEmpty() || s.peek() < x) {
+            s.add(x);
+            return;
+        }
+        int top = s.pop();
+        insertSorted(x, s);
+        s.add(top);
     }
 }
